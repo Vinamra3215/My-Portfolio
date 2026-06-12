@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinamra Gupta | AI & Quant Developer</title>
+  <meta name="description"
+    content="AI & Data Science undergrad at IIT Jodhpur. Building quantitative trading systems, deep learning pipelines, and research in medical imaging." />
+  <meta name="author" content="Vinamra Gupta" />
+  <meta name="keywords"
+    content="Vinamra Gupta, IIT Jodhpur, Quant, AI, Deep Learning, Competitive Programming, Portfolio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vinamra Gupta | AI & Quant Developer" />
+  <meta property="og:description"
+    content="AI&DS '28 at IIT Jodhpur. Quantitative trading, deep learning research, and competitive programming." />
+  <meta property="og:type" content="website" />
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#home" class="nav-logo">VG<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" id="nav-home" class="active">Home</a></li>
+      <li><a href="#about" id="nav-about">About</a></li>
+      <li><a href="#projects" id="nav-projects">Projects</a></li>
+      <li><a href="#blog" id="nav-blog">Blog</a></li>
+      <li><a href="#contact" id="nav-contact">Contact</a></li>
+    </ul>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- =================== HOME =================== -->
+  <section id="home" class="page">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-eyebrow">B.Tech AI & DS — IIT Jodhpur</div>
+    <h1 class="hero-name">
+      Vinamra<br>
+      <span class="line-2">Gupta</span>
+    </h1>
+    <p class="hero-desc">
+      Building <strong>Financial trading systems</strong> and <strong>deep learning pipelines</strong>.<br>
+      Passionate about financial ML, competitive programming, and <strong>Exploring new things</strong>
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Work</a>
+      <a href="https://drive.google.com/file/d/1Eqzqk2N8_p3SiOfhZ-ZBHSYjeIo9KLgJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Resume</a>
+      <a href="https://github.com/Vinamra3215" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-val">1544<span>↑</span></div>
+        <div class="stat-label">Codeforces Rating</div>
+      </div>
+      <div>
+        <div class="stat-val">7<span>th</span></div>
+        <div class="stat-label">Inter IIT Tech Meet 14.0</div>
+      </div>
+      <div>
+        <div class="stat-val">7.92<span>+</span></div>
+        <div class="stat-label">CGPA</div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section id="about" class="page">
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a second-year B.Tech student in <strong>Artificial Intelligence and Data Science</strong> at IIT
+            Jodhpur.</p>
+          <p>My core interests lie at the intersection of <strong>quantitative finance and deep learning</strong>. I've
+            built systematic trading strategies on anonymized multi-feature time-series data, designed wavelet-domain
+            MRI denoising frameworks, and developed ML pipelines for image classification — always with a focus on
+            measurable, real-world impact.</p>
+          <p>I was part of the team that secured <strong>7th place among 23 IITs at Inter IIT Tech Meet 14.0</strong>
+            for the Ebullient Securities quantitative trading challenge, achieving 32% annualized returns with a 14.40
+            Calmar ratio.</p>
+          <p>When I'm not building systems, I'm solving problems on Codeforces as a <strong>Specialist (1544)</strong>
+            or exploring new ideas in financial machine learning.</p>
+
+          <div style="margin-top: 2rem;">
+            <div class="section-num" style="margin-bottom: 1rem;">Skills</div>
+            <div class="skills-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="skill-cat fade-up">
+                <div class="skill-cat-name">Languages</div>
+                <div class="skill-tags">
+                  <span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span><span
+                    class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Vite</span><span
+                    class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Data Structures</span><span
+                    class="tag">Graph Algorithms</span>
+                </div>
+              </div>
+              <div class="skill-cat fade-up">
+                <div class="skill-cat-name">ML & Libraries</div>
+                <div class="skill-tags">
+                  <span class="tag">PyTorch</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span
+                    class="tag">TensorFlow</span><span class="tag">scikit-learn</span><span class="tag">LoRA</span><span
+                    class="tag">QLoRA</span>
+                </div>
+              </div>
+              <div class="skill-cat fade-up">
+                <div class="skill-cat-name">Tools</div>
+                <div class="skill-tags">
+                  <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span
+                    class="tag">Ubuntu</span><span class="tag">Jupyter Notebook</span><span class="tag">Colab</span>
+                </div>
+              </div>
+              <div class="skill-cat fade-up">
+                <div class="skill-cat-name">Areas of Interest</div>
+                <div class="skill-tags">
+                  <span class="tag">Competitive Programming</span><span class="tag">Deep Learning</span><span
+                    class="tag">Financial Machine Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-num" style="margin-bottom: 1.5rem;">Education</div>
+          <div class="edu-list">
+            <div class="edu-item fade-up">
+              <div class="edu-degree">B.Tech — AI & Data Science</div>
+              <div class="edu-school">Indian Institute of Technology, Jodhpur</div>
+              <div class="edu-meta">
+                <span class="cgpa">CGPA 7.92</span>
+                <span>2024 – Present</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 3rem;">
+            <div class="section-num" style="margin-bottom: 1.5rem;">Coursework</div>
+            <div class="skill-tags" style="gap:0.5rem;">
+              <span class="tag">Data Structures & Algorithms</span>
+              <span class="tag">Operating Systems</span>
+              <span class="tag">Computer Networks</span>
+              <span class="tag">Computer Architecture</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Linear Algebra</span>
+              <span class="tag">Probability & Statistics</span>
+              <span class="tag">Intro to Computer Science</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 3rem;">
+            <div class="section-num" style="margin-bottom: 1.5rem;">Campus</div>
+            <div class="edu-list">
+              <div class="edu-item fade-up">
+                <div class="edu-degree">Project Mentor — QuantxRAID Labs</div>
+                <div class="edu-school">IIT Jodhpur</div>
+                <div class="edu-meta"><span>Jun 2026 – Present</span></div>
+              </div>
+              <div class="edu-item fade-up">
+                <div class="edu-degree">Core Member — Quant Labs</div>
+                <div class="edu-school">IIT Jodhpur</div>
+                <div class="edu-meta"><span>Aug 2025 – Present</span></div>
+              </div>
+              <div class="edu-item fade-up">
+                <div class="edu-degree">Assistant Head — Prometeo'26</div>
+                <div class="edu-school">IIT Jodhpur</div>
+                <div class="edu-meta"><span>Nov 2025 – Jan 2026</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div style="margin-top: 5rem;">
+        <div class="section-header" style="margin-bottom: 0;">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Experience</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="exp-list">
+          <div class="exp-item fade-up">
+            <div class="exp-meta">
+              <div class="exp-date">Jun 2025 — Present</div>
+              <span class="exp-badge">Research</span>
+            </div>
+            <div>
+              <div class="exp-title">Undergraduate Researcher</div>
+              <div class="exp-org">Supervisor: Dr. Angshuman Paul · CSE, IIT Jodhpur</div>
+              <ul class="exp-bullets">
+                <li>Conceived a <span class="highlight">wavelet-domain MRI denoising framework</span> using Rician noise simulation, expediting restoration of <span class="highlight">high-NSA MRI images</span> from fast, <span class="highlight">low-NSA acquisitions</span>, reducing simulated scan times by up to <span class="highlight">75%</span>.</li>
+                <li>Evaluated 6 deep learning paradigms including <span class="highlight">CNNs, AEs, VAEs, Diffusion Models, and Restormer variants</span> (DWT/SWT-based); yielded <span class="highlight">32.53 PSNR, 0.82 SSIM, 0.05 LPIPS, and 17.12 FID</span> on 1 to 8 NSA recovery with <span class="highlight">60% recovery</span> on downstream segmentation tasks, outperforming <span class="highlight">5 current SOTA models</span>.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="exp-item fade-up">
+            <div class="exp-meta">
+              <div class="exp-date">Oct 2025 — Dec 2025</div>
+              <span class="exp-badge">Competition</span>
+            </div>
+            <div>
+              <div class="exp-title">Project Member — Inter IIT Tech Meet 14.0 <span
+                  style="color:var(--accent); font-size:0.8rem;">7th Place</span></div>
+              <div class="exp-org">Ebullient Securities Challenge (High Preparation PS)</div>
+              <ul class="exp-bullets">
+                <li>Formulated a <span class="highlight">quantitative trading strategy</span> on mid-frequency, anonymized multi-feature time-series data under market constraints, processing over 200 masked features spanning price, volatility, volume and bands.</li>
+                <li>Streamlined multiple <span class="highlight">adaptive indicators and regime-switching models</span>, including volatility-based KAMA and Kalman filters; generated 21% and 32% annualized returns delivering Calmar ratios of 5.33 and 14.40 with max drawdowns restricted to 3.83% and 2.18% on blind out-of-sample data.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACHIEVEMENTS -->
+      <div style="margin-top: 5rem;">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Achievements</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="ach-list">
+          <div class="ach-item fade-up">
+            <div class="ach-medal">🟣</div>
+            <div class="ach-content">
+              <div class="ach-title">Specialist — Codeforces</div>
+              <div class="ach-desc">Max Rating: 1544. Consistent problem solver in competitive programming.</div>
+            </div>
+          </div>
+          <div class="ach-item fade-up">
+            <div class="ach-medal">🏆</div>
+            <div class="ach-content">
+              <div class="ach-title">7th Place — Inter IIT Tech Meet 14.0</div>
+              <div class="ach-desc">Ranked 7th among 23 IITs for the Ebullient Securities quantitative trading
+                challenge.</div>
+            </div>
+          </div>
+          <div class="ach-item fade-up">
+            <div class="ach-medal">🎯</div>
+            <div class="ach-content">
+              <div class="ach-title">JEE Advanced 2024 — AIR 3048</div>
+              <div class="ach-desc">Secured All India Rank 3048 in one of the world's most competitive engineering
+                entrance exams.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PROJECTS =================== -->
+  <section id="projects" class="page">
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <!-- Ebullient Securities -->
+        <div class="project-card fade-up">
+          <div class="project-num">01 · Oct 2025 – Dec 2025</div>
+          <div class="project-name">Trading Strategy</div>
+          <div class="project-context">Quantitative Finance · Inter IIT Tech Meet 14.0</div>
+          <div class="project-desc">Architected a Python-driven backtesting pipeline evaluating &gt;500,000 data points, integrating volatility-adjusted position-sizing and automated risk controls to navigate masked price-volume behaviors and cap maximum drawdown at 2-3% even during severe market downturns.</div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span><span class="stack-tag">Finance</span><span class="stack-tag">Backtesting</span><span class="stack-tag">NumPy</span><span class="stack-tag">Kalman Filter</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Vinamra3215/Ebullient-Securities-Challenge" target="_blank"
+              rel="noopener noreferrer" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://drive.google.com/file/d/1UrWuMFG-gOzeXUlg7ZKk_5gHCQJ31cvG/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="project-link">
+              ↗ Idea Paper
+            </a>
+            <a href="https://drive.google.com/file/d/1ghOOnmB2URoAi5SCgfKsQ7ogzU9KByhx/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="project-link">
+              ↗ Performance Metrics
+            </a>
+          </div>
+        </div>
+
+        <!-- Food Image Classification -->
+        <div class="project-card fade-up">
+          <div class="project-num">02 · Feb 2026 – Apr 2026</div>
+          <div class="project-name">Food Image Classification</div>
+          <div class="project-context">Classical ML Pipeline · PRML Coursework</div>
+          <div class="project-desc">Accelerated a 4-phase classical ML pipeline for 20-class food image classification, integrating 4 handcrafted features (HOG, LBP, GLCM, Histogram) compressed by 80% via PCA, alongside a custom Bayesian KDE and 7 GridSearchCV-tuned classifiers evaluated via stratified 5-fold cross-validation.</div>
+          <div class="project-stack">
+            <span class="stack-tag">scikit-learn</span><span class="stack-tag">PCA</span><span
+              class="stack-tag">Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Vinamra3215/Food-Image-Classification.git" target="_blank"
+              rel="noopener noreferrer" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- CashFlow Minimizer-Visualizer -->
+        <div class="project-card fade-up">
+          <div class="project-num">03 · Sep 2025 – Nov 2025</div>
+          <div class="project-name">CashFlow Minimizer-Visualizer</div>
+          <div class="project-context">Graph Algorithms · Transaction Visualizer</div>
+          <div class="project-desc">Produced a transaction optimization platform, trims redundant cash flows by 90% using graph algorithms, featuring a real-time Web Worker-driven dashboard to benchmark 5 algorithms (Greedy, Min Cash Flow, Heap, Priority Queue, and Sorting-based) on execution latency and efficiency with interactive visualizations.</div>
+          <div class="project-stack">
+            <span class="stack-tag">C++</span><span class="stack-tag">Graph Algorithms</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Vinamra3215/CashFlow-Minimizer-and-Transaction-Visualizer" target="_blank"
+              rel="noopener noreferrer" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://cash-flow-minimizer-and-transaction-seven.vercel.app" target="_blank"
+              rel="noopener noreferrer" class="project-link">
+              ↗ Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Smart Interface -->
+        <div class="project-card fade-up">
+          <div class="project-num">04 · Nov 2025 – Dec 2025</div>
+          <div class="project-name">Smart Interface</div>
+          <div class="project-context">GTK-based GUI · System Programming</div>
+          <div class="project-desc">A smartphone simulator featuring 4 desktop applications—Calculator, Snake Game, To-Do List, and Contacts List—using the GTK library in C with system-level process management.</div>
+          <div class="project-stack">
+            <span class="stack-tag">C</span><span class="stack-tag">GTK</span><span class="stack-tag">GUI</span><span class="stack-tag">System Programming</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Vinamra3215/Smart-Interface.git" target="_blank"
+              rel="noopener noreferrer" class="project-link">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== BLOG =================== -->
+  <section id="blog" class="page">
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Blog</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Blog Teaser Card -->
+      <div class="blog-teaser fade-up" id="blog-teaser">
+        <h3>Multi-Regime Quantitative Trading on Anonymized Time-Series</h3>
+        <p>How we designed a systematic trading framework using volatility regime detection, adaptive indicators, and
+          priority-based strategy selection to achieve 32% annualized returns at Inter IIT Tech Meet 14.0.</p>
+        <button class="btn btn-primary" onclick="openBlog()">Read Full Post →</button>
+      </div>
+
+      <!-- Full Blog Article (hidden initially) -->
+      <article class="blog-article" id="blog-article" style="display:none;">
+        <button class="btn btn-ghost" onclick="closeBlog()" style="margin-bottom:2rem;">← Back to Blog</button>
+
+        <h1>Multi-Regime Quantitative Trading on Anonymized Time-Series</h1>
+
+        <p class="blog-meta-line">
+          <span class="blog-tag">QUANTITATIVE FINANCE</span> · 
+          <span style="color:var(--text-dim); font-size:0.75rem;">Inter IIT Tech Meet 14.0 — Ebullient Securities Challenge</span>
+        </p>
+
+        <hr style="border:0; border-top:1px solid var(--border); margin:2rem 0;">
+
+        <h2>I. Introduction</h2>
+        <p>The Ebullient Securities Challenge at Inter IIT Tech Meet 14.0 required teams to develop systematic
+          quantitative trading strategies on <strong>mid-frequency, anonymized multi-feature time-series data</strong>.
+          The dataset consisted of two instruments — <strong>EBX</strong> and <strong>EBY</strong> — with hundreds of
+          masked features spanning price, volatility, volume, and technical bands.</p>
+        <p>The core challenge was building a profitable, risk-controlled strategy without knowing what any feature
+          actually represented — pure statistical signal extraction from opaque data.</p>
+
+        <h2>II. Architecture: Multi-Regime Framework</h2>
+        <p>Our approach was built on a <strong>tiered pipeline</strong>:</p>
+        <ul>
+          <li><strong>Market Regime Detection</strong> → Classify each trading day by volatility regime</li>
+          <li><strong>Strategy Selection</strong> → Dynamically pick the best strategy via a priority-based manager</li>
+          <li><strong>Signal Generation</strong> → Execute trades with adaptive indicators and strict risk controls</li>
+        </ul>
+
+        <h3>Volatility Regime Classification</h3>
+        <p>We computed 30-minute opening volatility (σ) and mean price (μ) for each day, then segmented days into
+          regimes:</p>
+        <ul>
+          <li><strong>High Volatility (Strategy 1)</strong>: σ > σ<sub>75</sub> and μ > μ<sub>threshold</sub> → <em>Short-first bias</em>. Price spikes likely to be sold off.</li>
+          <li><strong>Mid Volatility (Strategy 2)</strong>: σ<sub>50</sub> ≤ σ ≤ σ<sub>75</sub> and μ < μ<sub>threshold</sub> → <em>Long-first bias</em>. Price dips likely to recover.</li>
+        </ul>
+        <p>If neither condition is met, the system stays flat — <strong>no trade is the best trade</strong> when conditions don't favor us.</p>
+
+        <h2>III. Core Strategies</h2>
+
+        <h3>1. Sigma-Triggered Alpha Reactor (STAR)</h3>
+        <p>A three-phase sequential reversal strategy adapted to the volatility regime:</p>
+        <ul>
+          <li><strong>Gap-Fill Entry</strong>: Counter-trend position at the 30-minute mark when price is outside Open ± Threshold</li>
+          <li><strong>Flip</strong>: On target hit, close initial position → cooldown → open high-conviction position in favored direction with trailing stop loss</li>
+          <li><strong>Position Management</strong>: Trailing stops + reversal targets + end-of-day square-off</li>
+        </ul>
+
+        <h3>2. Volatility-Filtered KAMA Trend</h3>
+        <p>Day segregation using <strong>ATR and STD thresholds</strong>. On filtered "tradable" days, applies the
+          <strong>Kaufman Adaptive Moving Average (KAMA)</strong> slope to detect trend direction and generate long/short
+          signals with take-profit barriers.</p>
+
+        <h3>3. Hawkes Adaptive Trend Strategy</h3>
+        <p>Captures large, sustained movements while avoiding chop:</p>
+        <ul>
+          <li><strong>Adaptive Trend</strong>: Price smoothed via Ehlers Super Smoother → AURA filter</li>
+          <li><strong>Impulse Detection</strong>: Hawkes Process measures momentum burst intensity</li>
+          <li><strong>Dynamic Volatility Walls</strong>: Adaptive support/resistance boundaries</li>
+          <li><strong>Entry</strong>: Only when validated Hawkes impulse + volatility wall + trend slope alignment</li>
+        </ul>
+
+        <h3>4. SuperNova Crossover</h3>
+        <p>Volatility-gated AURA-JMA crossover — only activates when both ATR and rolling standard deviation gates are
+          met. Trades based on crossovers between a slow AURA and the Jurik Moving Average, with independent signal
+          management where exits trigger delayed counter-entries.</p>
+
+        <h2>IV. Dynamic Priority-Based Strategy Manager</h2>
+        <p>We used a <strong>priority-based locking method</strong> with pre-assigned priorities. Each strategy's lock
+          resets daily:</p>
+        <ul>
+          <li><strong>EBX</strong>: Denoised Trend Pattern → Volatility-Filtered KAMA → STAR</li>
+          <li><strong>EBY</strong>: Denoised Trend Pattern → STAR → Volatility-Filtered KAMA → Money Heist</li>
+        </ul>
+        <p>The selector cascades through strategies, ensuring the most reliable one is always selected for prevailing
+          conditions.</p>
+
+        <h2>V. Performance Metrics</h2>
+        <div style="overflow-x:auto; margin:1.5rem 0;">
+          <table class="metrics-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>EBY</th>
+                <th>EBX</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Final Returns</td><td>34.75%</td><td>39.68%</td></tr>
+              <tr><td>Annualized Returns</td><td>31.39%</td><td>20.41%</td></tr>
+              <tr><td>Calmar Ratio</td><td>15.94</td><td>10.36</td></tr>
+              <tr><td>Annualized Calmar</td><td>14.40</td><td>5.33</td></tr>
+              <tr><td>Maximum Drawdown</td><td>-2.18%</td><td>-3.83%</td></tr>
+              <tr><td>Sharpe Ratio</td><td>2.58</td><td>2.48</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>VI. Key Takeaways</h2>
+        <ul>
+          <li><strong>Custom Indicators</strong>: AURA, Ehlers Super Smoother, and Hawkes Process — designed
+            specifically for the anonymized data's statistical properties</li>
+          <li><strong>Regime Awareness</strong>: The system knows when <em>not</em> to trade. Flat positions during
+            unfavorable regimes prevented most drawdown</li>
+          <li><strong>Risk Management</strong>: Z-score-based position sizing and cascading controls automatically
+            adjusted exposure based on market conditions</li>
+          <li><strong>No Feature Engineering Bias</strong>: Since features were anonymized, all signals were derived
+            purely from statistical properties — no domain assumptions leaked in</li>
+        </ul>
+
+        <hr>
+      </article>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section id="contact" class="page">
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-inner">
+        <div>
+          <div class="contact-headline">Let's<br><span>Connect</span><br>& Build.</div>
+          <p class="contact-sub">Open to research collaborations, quantitative finance projects, internship
+            opportunities, and interesting conversations about AI, trading systems, or competitive programming.</p>
+          <div class="contact-links">
+            <a href="tel:+918920725866" class="contact-link">
+              <span class="link-label">Phone</span>
+              <span class="link-val">+91-8920725866</span>
+              <span>↗</span>
+            </a>
+            <a href="mailto:vinamragupta100@gmail.com" class="contact-link">
+              <span class="link-label">Email</span>
+              <span class="link-val">vinamragupta100@gmail.com</span>
+              <span>↗</span>
+            </a>
+            <a href="mailto:b24cm1068@iitj.ac.in" class="contact-link">
+              <span class="link-label">Email 2</span>
+              <span class="link-val">b24cm1068@iitj.ac.in</span>
+              <span>↗</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1Eqzqk2N8_p3SiOfhZ-ZBHSYjeIo9KLgJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="link-label">Resume</span>
+              <span class="link-val">Google Drive Link</span>
+              <span>↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vinamra-gupta-259454336/" target="_blank" rel="noopener noreferrer"
+              class="contact-link">
+              <span class="link-label">LinkedIn</span>
+              <span class="link-val">vinamra-gupta</span>
+              <span>↗</span>
+            </a>
+            <a href="https://github.com/Vinamra3215" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="link-label">GitHub</span>
+              <span class="link-val">Vinamra3215</span>
+              <span>↗</span>
+            </a>
+            <a href="https://codeforces.com/profile/VG_3215" target="_blank" rel="noopener noreferrer"
+              class="contact-link">
+              <span class="link-label">Codeforces</span>
+              <span class="link-val">VG_3215</span>
+              <span>↗</span>
+            </a>
+            <a href="https://leetcode.com/u/vinamra_3215/" target="_blank" rel="noopener noreferrer"
+              class="contact-link">
+              <span class="link-label">LeetCode</span>
+              <span class="link-val">vinamra_3215</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Name</label>
+              <input type="text" class="form-input" id="contact-name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email</label>
+              <input type="email" class="form-input" id="contact-email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea class="form-textarea" id="contact-message" placeholder="Tell me about your project or idea..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Vinamra Gupta</span>
+    <span>Built from scratch · IIT Jodhpur</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
