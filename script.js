@@ -73,7 +73,6 @@ fadeEls.forEach(el => fadeObserver.observe(el));
 function openBlog() {
   document.getElementById('blog-teaser').style.display = 'none';
   document.getElementById('blog-article').style.display = 'block';
-  // Scroll to top of blog section
   document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -90,7 +89,6 @@ function handleContact(e) {
   const email = document.getElementById('contact-email').value;
   const message = document.getElementById('contact-message').value;
 
-  // Open mailto with pre-filled content
   const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
   const body = encodeURIComponent(`Hi Vinamra,\n\n${message}\n\nFrom: ${name}\nEmail: ${email}`);
   window.location.href = `mailto:vinamragupta100@gmail.com?subject=${subject}&body=${body}`;
@@ -106,3 +104,74 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// ========== COSMIC STARFIELD (SEAMLESS LOOP) ==========
+function createStarfield() {
+  const starfield = document.createElement('div');
+  starfield.id = 'starfield';
+  starfield.style.position = 'fixed';
+  starfield.style.inset = '0';
+  starfield.style.pointerEvents = 'none';
+  starfield.style.zIndex = '0';
+  starfield.style.overflow = 'hidden';
+  
+  // 3 distinct parallax tiers for structural space depth
+  const layers = [
+    { count: 120, size: '1px', speed: '140s' },
+    { count: 60, size: '2px', speed: '100s' },
+    { count: 20, size: '3px', speed: '60s' }
+  ];
+
+  const fieldWidth = 2560; 
+  const loopHeight = 2000; // Exact keyframe translation boundary
+
+  layers.forEach((layer, idx) => {
+    const starLayer = document.createElement('div');
+    starLayer.className = `star-layer layer-${idx}`;
+    starLayer.style.position = 'absolute';
+    starLayer.style.top = '0';
+    starLayer.style.left = '0';
+    
+    let shadows = [];
+    for (let i = 0; i < layer.count; i++) {
+      const x = Math.floor(Math.random() * fieldWidth);
+      const y = Math.floor(Math.random() * loopHeight);
+      const opacity = (Math.random() * 0.6 + 0.4).toFixed(2);
+      
+      // Primary star placement
+      shadows.push(`${x}px ${y}px rgba(255, 255, 255, ${opacity})`);
+      // Duplicate offset placement ensures zero-pop seamless wrap-around animation loops
+      shadows.push(`${x}px ${y + loopHeight}px rgba(255, 255, 255, ${opacity})`);
+    }
+
+    starLayer.style.boxShadow = shadows.join(', ');
+    starLayer.style.width = layer.size;
+    starLayer.style.height = layer.size;
+    starLayer.style.borderRadius = '50%';
+    starLayer.style.animation = `star-drift-${idx} ${layer.speed} linear infinite`;
+    
+    starfield.appendChild(starLayer);
+  });
+
+  document.body.appendChild(starfield);
+}
+
+// Inject seamless mathematical looping keyframes matching loopHeight
+const styleSheet = document.createElement('style');
+styleSheet.textContent = `
+  @keyframes star-drift-0 {
+    from { transform: translateY(0); }
+    to { transform: translateY(-2000px); }
+  }
+  @keyframes star-drift-1 {
+    from { transform: translateY(0); }
+    to { transform: translateY(-2000px); }
+  }
+  @keyframes star-drift-2 {
+    from { transform: translateY(0); }
+    to { transform: translateY(-2000px); }
+  }
+`;
+document.head.appendChild(styleSheet);
+
+window.addEventListener('DOMContentLoaded', createStarfield);
